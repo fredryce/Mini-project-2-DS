@@ -1,0 +1,4 @@
+"0","```r
+## remove artist duplicates
+playlist <- lapply(playlist, unique)     
+```"

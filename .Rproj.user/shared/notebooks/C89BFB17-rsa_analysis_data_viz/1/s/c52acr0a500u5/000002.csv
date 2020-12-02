@@ -1,0 +1,24 @@
+"0","```r
+#do the countries win with big score gap, make box plot
+#winning score gap and losing score gap
+
+home_team_wins <- my_data %>% 
+  mutate(score_gap=`Home Team Goals`- `Away Team Goals`) %>% 
+  filter(score_gap > 0) %>% 
+  select(`Home Team Name`, score_gap) %>% 
+  rename(teamname= `Home Team Name`) 
+
+
+
+  
+away_team_wins <- my_data %>% 
+  mutate(score_gap=`Away Team Goals`- `Home Team Goals`) %>% 
+  filter(score_gap > 0) %>% 
+  select(`Away Team Name`, score_gap) %>% 
+  rename(teamname= `Away Team Name`)
+
+
+total_gap <- rbind(away_team_wins, home_team_wins)
+
+total_gap 
+```"

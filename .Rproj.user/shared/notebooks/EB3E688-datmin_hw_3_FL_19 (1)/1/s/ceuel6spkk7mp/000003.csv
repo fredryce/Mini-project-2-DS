@@ -1,0 +1,5 @@
+"0","```r
+ggplot(rules_df, aes(x =confidence , y = support)) +
+  geom_point()
+
+```"

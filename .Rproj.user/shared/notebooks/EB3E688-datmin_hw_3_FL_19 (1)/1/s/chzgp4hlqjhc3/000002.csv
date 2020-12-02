@@ -1,0 +1,4 @@
+"0","```r
+ggplot(mymoons, aes(x =X , y = Y, color = hc_result2)) +
+  geom_point()
+```"

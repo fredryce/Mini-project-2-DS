@@ -1,0 +1,6 @@
+"0","```r
+# convert to transactions class
+
+tr_playlist <- as(playlist, \"transactions\")
+
+```"

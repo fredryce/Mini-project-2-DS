@@ -1,0 +1,6 @@
+"0","```r
+freq_data <- data.frame(table(lastfm$artist))
+sorted <- arrange(freq_data, desc(Freq))
+
+head(sorted, 10)
+```"

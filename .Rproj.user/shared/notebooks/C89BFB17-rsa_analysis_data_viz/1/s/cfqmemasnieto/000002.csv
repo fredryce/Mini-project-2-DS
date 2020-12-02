@@ -1,0 +1,15 @@
+"0","```r
+#how does score at half time affects the result
+#which teams tends to have better first half performance over second half
+#need to remove those that have 0 scores total games
+#based on winning games
+
+
+#winning team's performance on the first half of the game
+
+game_scores <- my_data %>% 
+  mutate(home_score_ratio= (`Half-time Home Goals` / `Home Team Goals`)*100, away_score_ratio =(`Half-time Away Goals` / `Away Team Goals`)*100) %>% 
+  replace(is.na(.), 0) %>% 
+  select(`Home Team Name`, `Away Team Name`, home_score_ratio, away_score_ratio, `Home Team Goals`, `Away Team Goals`) %>% 
+  print()
+```"

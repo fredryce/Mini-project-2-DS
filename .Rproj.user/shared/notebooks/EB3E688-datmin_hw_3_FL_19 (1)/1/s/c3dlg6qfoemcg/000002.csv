@@ -1,0 +1,6 @@
+"0","```r
+# change to class transactions
+
+tr <- as(courses_mat, \"transactions\")
+
+```"

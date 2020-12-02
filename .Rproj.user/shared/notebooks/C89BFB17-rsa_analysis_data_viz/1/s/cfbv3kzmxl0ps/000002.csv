@@ -1,0 +1,20 @@
+"0","```r
+#proportion home wins vs away wins, Does home offers a good advantage for some teams over others
+
+
+joined_df %>% 
+  select(teamname, home_wins, away_wins, total_wins) %>% 
+  arrange(desc(total_wins)) %>% 
+  head(20) %>%
+  select(-total_wins) %>% 
+  print() %>% 
+  gather(location_win, score, -teamname) %>% 
+  print() %>% 
+  ggplot(aes(x=teamname, y=score, fill=location_win)) +
+  geom_bar(position = \"fill\", stat = \"identity\") +
+  coord_flip() +
+  theme_minimal() +
+  scale_fill_brewer(name = \"\", labels = c(\"Away game\", \"Home game\"), palette=\"Set2\") +
+  theme(axis.title.y=element_blank(), legend.position = \"top\")+
+  labs(title=\"Win ratios home games vs away games\", y=\"Percentage\")
+```"

@@ -1,0 +1,11 @@
+"1","
+Absolute minimum support count: 150 
+
+set item appearances ...[0 item(s)] done [0.00s].
+set transactions ...[1004 item(s), 15000 transaction(s)] done [0.11s].
+sorting and recoding items ... [655 item(s)] done [0.01s].
+creating transaction tree ... done [0.01s].
+checking subsets of size 1 2 3 4 done [0.05s].
+writing ... [1088 rule(s)] done [0.00s].
+creating S4 object  ... done [0.01s].
+"

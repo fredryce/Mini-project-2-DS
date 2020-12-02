@@ -1,0 +1,14 @@
+"0","```r
+#city with most games played in
+my_data %>% 
+  filter(!is.na(City)) %>% 
+  group_by(City) %>% 
+  count(sort=T) %>% 
+  head(10) %>% 
+  ggplot(aes(x=fct_reorder(City, n), y=n, fill=City)) +
+  geom_bar(stat=\"identity\") +
+  coord_flip() + 
+  theme_classic() +
+  theme(legend.position=\"none\", axis.title.y=element_blank())+
+  labs(title=\"Top 10 cities for hosting world cup since 1930\", y=\"Total number\")
+```"

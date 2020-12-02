@@ -1,0 +1,6 @@
+"0","```r
+distance_moon <- dist(mymoons)
+# use distance matrix as input for clustering method
+hc_moon <- hclust(distance_moon, method = \"single\")
+hc_result1 <- as.factor(cutree(hc_moon,4))
+```"

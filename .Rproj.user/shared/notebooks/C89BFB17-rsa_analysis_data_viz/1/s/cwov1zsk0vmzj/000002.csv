@@ -1,0 +1,9 @@
+"0","```r
+#number of games plays by each county
+games_played_home <- my_data %>% 
+  select(`Home Team Name`, `Home Team Goals`, `Away Team Goals`) %>% 
+  group_by(`Home Team Name`) %>% 
+  summarise(games=n(), wins=sum(`Home Team Goals` > `Away Team Goals`)) %>% 
+  rename(teamname=`Home Team Name`, home_games=games, home_wins=wins) %>% 
+  print()
+```"

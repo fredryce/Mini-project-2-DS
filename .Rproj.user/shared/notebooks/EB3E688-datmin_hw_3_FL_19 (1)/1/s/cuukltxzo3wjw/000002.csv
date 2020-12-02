@@ -1,0 +1,19 @@
+"0","```r
+# network visualization
+
+plot(new_rules, method = \"graph\",
+     control = list(type=\"death cab for cutie\"), 
+     engine = \"htmlwidget\")
+```"
+"1","Available control parameters (with default values):
+itemCol	 =  #CBD2FC
+nodeCol	 =  c(\"#EE0000\", \"#EE0303\", \"#EE0606\", \"#EE0909\", \"#EE0C0C\", \"#EE0F0F\", \"#EE1212\", \"#EE1515\", \"#EE1818\", \"#EE1B1B\", \"#EE1E1E\", \"#EE2222\", \"#EE2525\", \"#EE2828\", \"#EE2B2B\", \"#EE2E2E\", \"#EE3131\", \"#EE3434\", \"#EE3737\", \"#EE3A3A\", \"#EE3D3D\", \"#EE4040\", \"#EE4444\", \"#EE4747\", \"#EE4A4A\", \"#EE4D4D\", \"#EE5050\", \"#EE5353\", \"#EE5656\", \"#EE5959\", \"#EE5C5C\", \"#EE5F5F\", \"#EE6262\", \"#EE6666\", \"#EE6969\", \"#EE6C6C\", \"#EE6F6F\", \"#EE7272\", \"#EE7575\", \"#EE7878\", \"#EE7B7B\", \"#EE7E7E\", \"#EE8181\", \"#EE8484\", \"#EE8888\", \"#EE8B8B\",  \"#EE8E8E\", \"#EE9191\", \"#EE9494\", \"#EE9797\", \"#EE9999\", \"#EE9B9B\", \"#EE9D9D\", \"#EE9F9F\", \"#EEA0A0\", \"#EEA2A2\", \"#EEA4A4\", \"#EEA5A5\", \"#EEA7A7\", \"#EEA9A9\", \"#EEABAB\", \"#EEACAC\", \"#EEAEAE\", \"#EEB0B0\", \"#EEB1B1\", \"#EEB3B3\", \"#EEB5B5\", \"#EEB7B7\", \"#EEB8B8\", \"#EEBABA\", \"#EEBCBC\", \"#EEBDBD\", \"#EEBFBF\", \"#EEC1C1\", \"#EEC3C3\", \"#EEC4C4\", \"#EEC6C6\", \"#EEC8C8\", \"#EEC9C9\", \"#EECBCB\", \"#EECDCD\", \"#EECFCF\", \"#EED0D0\", \"#EED2D2\", \"#EED4D4\", \"#EED5D5\", \"#EED7D7\", \"#EED9D9\", \"#EEDBDB\", \"#EEDCDC\", \"#EEDEDE\", \"#EEE0E0\",  \"#EEE1E1\", \"#EEE3E3\", \"#EEE5E5\", \"#EEE7E7\", \"#EEE8E8\", \"#EEEAEA\", \"#EEECEC\", \"#EEEEEE\")
+precision	 =  3
+igraphLayout	 =  layout_nicely
+interactive	 =  TRUE
+engine	 =  visNetwork
+max	 =  100
+selection_menu	 =  TRUE
+degree_highlight	 =  1
+verbose	 =  FALSE
+"

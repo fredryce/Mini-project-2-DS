@@ -1,0 +1,6 @@
+"0","```r
+# different users
+length(unique(lastfm$user))
+```"
+"1","[1] 15000
+"

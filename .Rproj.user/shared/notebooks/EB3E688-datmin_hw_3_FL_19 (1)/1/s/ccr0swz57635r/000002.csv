@@ -1,0 +1,4 @@
+"0","```r
+# inspect rules 
+inspect(head(sort(rules, by = \"lift\"), 5))
+```"

@@ -1,0 +1,17 @@
+"0","```r
+my_data <- read_csv(\"https://raw.githubusercontent.com/reisanar/datasets/master/WorldCupMatches.csv\")
+```"
+"1","Parsed with column specification:
+cols(
+  .default = col_character(),
+  Year = [32mcol_double()[39m,
+  `Home Team Goals` = [32mcol_double()[39m,
+  `Away Team Goals` = [32mcol_double()[39m,
+  Attendance = [32mcol_double()[39m,
+  `Half-time Home Goals` = [32mcol_double()[39m,
+  `Half-time Away Goals` = [32mcol_double()[39m,
+  RoundID = [32mcol_double()[39m,
+  MatchID = [32mcol_double()[39m
+)
+See spec(...) for full column specifications.
+"

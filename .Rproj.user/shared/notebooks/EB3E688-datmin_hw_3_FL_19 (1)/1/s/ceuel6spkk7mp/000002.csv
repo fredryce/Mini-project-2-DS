@@ -1,0 +1,6 @@
+"0","```r
+# visualization
+
+
+rules_df <- as.data.frame(inspect(new_rules))
+```"

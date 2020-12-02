@@ -1,0 +1,9 @@
+"0","```r
+#remove countries with only 1 game
+
+countries_count <- total_gap %>% 
+  group_by(teamname) %>% 
+  count(sort=T) %>% 
+  filter(n>5) %>% 
+  print()
+```"

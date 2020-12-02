@@ -1,0 +1,5 @@
+"0","```r
+
+hc_moon <- hclust(distance_moon, method = \"complete\")
+hc_result2 <- as.factor(cutree(hc_moon,4))
+```"

@@ -1,0 +1,31 @@
+"0","```r
+
+
+home_game_data <- game_scores %>% 
+  filter(`Home Team Goals` > `Away Team Goals`) %>% 
+  select(`Home Team Name`, home_score_ratio) %>% 
+  rename(teamname=`Home Team Name`, first_half_score_ratio = home_score_ratio)
+
+away_game_data <- game_scores %>% 
+   filter(`Home Team Goals` < `Away Team Goals`) %>% 
+   select(`Away Team Name`, away_score_ratio) %>% 
+   rename(teamname=`Away Team Name`, first_half_score_ratio = away_score_ratio)
+
+
+total_data <- rbind(home_game_data, away_game_data) %>% 
+  right_join(countries_count, by=\"teamname\") 
+
+
+
+
+
+total_data %>% 
+  group_by(teamname) %>% 
+  summarise(avg_half_time_ratio=mean(first_half_score_ratio)) %>% 
+  ggplot(aes(x=fct_reorder(teamname, avg_half_time_ratio), y=avg_half_time_ratio, fill=)) +
+  geom_bar(stat = \"identity\") +
+  coord_flip() +
+  theme_classic() +
+  theme(axis.title.y=element_blank(), legend.position = \"top\")+
+  labs(title=\"Half time score ratio for winning games\", y=\"Percentage\")
+```"

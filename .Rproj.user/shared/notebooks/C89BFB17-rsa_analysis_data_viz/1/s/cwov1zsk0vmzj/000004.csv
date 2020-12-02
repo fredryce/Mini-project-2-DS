@@ -1,0 +1,7 @@
+"0","```r
+
+joined_df <- inner_join(games_played_away, games_played_home, by=\"teamname\") %>% 
+  mutate(total_games = away_games+home_games, total_wins=away_wins+home_wins) %>% 
+  filter(!is.na(teamname))
+joined_df
+```"

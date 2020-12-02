@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1602556304403.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1748338470",
+    "id" : "4016E9E4",
+    "lastKnownWriteTime" : 1602555956,
+    "last_content_update" : 1602555956,
+    "path" : "~/Desktop/R miniproject/dataviz_mini-project_01/report/rsa_analysis_data_viz.Rmd",
+    "project_path" : "report/rsa_analysis_data_viz.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "85,0",
+        "scrollLine" : "78"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

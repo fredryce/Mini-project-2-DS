@@ -1,0 +1,19 @@
+"0","```r
+#now we need to determine the proportion of wins vs game played for each country
+#to use position fill need to gather data into two columns
+joined_df %>% 
+  mutate(total_loss= total_games-total_wins) %>% 
+  select(teamname, total_loss, total_wins) %>% 
+  arrange(desc(total_wins)) %>% 
+  head(20) %>% 
+  print() %>%
+  gather(result, score, -teamname) %>% 
+  print() %>% 
+  ggplot(aes(x=teamname, y=score, fill=result)) +
+  geom_bar(position = \"fill\", stat = \"identity\") +
+  coord_flip() +
+  theme_minimal() +
+  scale_fill_brewer(name = \"\", labels = c(\"loss\", \"win\"), palette=\"Set1\") +
+  theme(axis.title.y=element_blank(), legend.position = \"top\")+
+  labs(title=\"Win ratios for top 20 countries with most wins\", y=\"Percentage\")
+```"

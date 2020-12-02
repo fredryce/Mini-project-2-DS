@@ -1,0 +1,30 @@
+"0","```r
+km_util_4 <- kmeans(util_clean, center=4)
+
+
+clust_list <- split(x=utilities_df[, \"Company\"], f=km_util_4$cluster)
+clust_list <- lapply(clust_list, unique)   
+clust_list
+```"
+"1","$`1`
+[1] Hawaiian  Kentucky  Northern  Wisconsin United   
+22 Levels: Arizona  Boston  Central  Commonwealth ... Wisconsin
+
+$`2`
+[1] Arizona  Central  Florida  Oklahoma Southern Virginia
+22 Levels: Arizona  Boston  Central  Commonwealth ... Wisconsin
+
+$`3`
+[1] Idaho  Nevada Puget  Texas 
+22 Levels: Arizona  Boston  Central  Commonwealth ... Wisconsin
+
+$`4`
+[1] Boston       Commonwealth NY           Madison      New England 
+[6] Pacific      San Diego   
+22 Levels: Arizona  Boston  Central  Commonwealth ... Wisconsin
+"
+"0","```r
+km_util_4$betweenss
+```"
+"1","[1] 239312781
+"

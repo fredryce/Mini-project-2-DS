@@ -1,0 +1,8 @@
+"0","```r
+# use apriori()
+rules <- apriori(tr, parameter = list(support = 0.01,confidence = 0.1))
+```"
+"1","Apriori
+
+Parameter specification:
+"

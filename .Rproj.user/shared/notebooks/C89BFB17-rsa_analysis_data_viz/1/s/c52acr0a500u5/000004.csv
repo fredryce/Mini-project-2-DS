@@ -1,0 +1,10 @@
+"0","```r
+
+total_gap %>%
+  right_join(countries_count, by=\"teamname\") %>% 
+  ggplot() +
+  geom_boxplot( aes(x=fct_reorder(as.factor(teamname), score_gap , mean), y=score_gap), outlier.shape = NA, alpha=0.5) +
+  coord_flip() +
+  theme(axis.title.y=element_blank(), legend.position = \"top\")+
+  labs(title=\"Score advantage for match winners\", y=\"Score difference\")
+```"

@@ -1,0 +1,9 @@
+"0","```r
+
+games_played_away <- my_data %>% 
+  select(`Away Team Name`, `Home Team Goals`, `Away Team Goals`) %>% 
+  group_by(`Away Team Name`) %>% 
+  summarise(games=n(), wins=sum(`Home Team Goals` > `Away Team Goals`)) %>% 
+  rename(teamname=`Away Team Name`, away_games = games, away_wins = wins) %>% 
+  print()
+```"

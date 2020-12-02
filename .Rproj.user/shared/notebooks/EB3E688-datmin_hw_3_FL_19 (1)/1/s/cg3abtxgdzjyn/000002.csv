@@ -1,0 +1,6 @@
+"0","```r
+# different artists
+length(unique(lastfm$artist))
+```"
+"1","[1] 1004
+"

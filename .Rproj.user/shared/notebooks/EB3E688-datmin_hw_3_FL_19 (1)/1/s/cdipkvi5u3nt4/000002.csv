@@ -1,0 +1,8 @@
+"0","```r
+# use apriori()
+new_rules <- apriori(tr_playlist, parameter = list(support = 0.01,confidence = 0.2))
+```"
+"1","Apriori
+
+Parameter specification:
+"

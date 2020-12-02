@@ -1,0 +1,27 @@
+"0","```r
+playlist[1:2]
+```"
+"1","$`1`
+ [1] red hot chili peppers   the black dahlia murder
+ [3] goldfrapp               dropkick murphys       
+ [5] le tigre                schandmaul             
+ [7] edguy                   jack johnson           
+ [9] eluveitie               the killers            
+[11] judas priest            rob zombie             
+[13] john mayer              the who                
+[15] guano apes              the rolling stones     
+1004 Levels: ...and you will know us by the trail of dead ...
+
+$`3`
+ [1] devendra banhart    boards of canada    cocorosie          
+ [4] aphex twin          animal collective   atmosphere         
+ [7] joanna newsom       air                 portishead         
+[10] massive attack      broken social scene arcade fire        
+[13] plaid               prefuse 73          m83                
+[16] the flashbulb       pavement            goldfrapp          
+[19] amon tobin          sage francis        four tet           
+[22] max richter         autechre            radiohead          
+[25] neutral milk hotel  beastie boys        aesop rock         
+[28] mf doom             the books          
+1004 Levels: ...and you will know us by the trail of dead ...
+"
